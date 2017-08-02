@@ -32,7 +32,7 @@ const TabOption = ({
             lastTabStyle]}
             onPress={() => onTabPress(index)}
             activeOpacity={1}>
-            <Text style={[
+            <Text allowFontScaling={false} style={[
                 styles.textStyle,
                 tabTextStyle,
                 isTabActive ? [styles.activeTabTextStyle, activeTabTextStyle] : {}]}>
